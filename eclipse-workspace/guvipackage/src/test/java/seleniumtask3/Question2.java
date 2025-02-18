@@ -20,7 +20,7 @@ WebDriver driver=new ChromeDriver();
 		driver.get("https://jqueryui.com/droppable/");
 		 //to maximize the window
 		driver.manage().window().maximize();
-		//browser to wait
+		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		WebElement iframe=driver.findElement(By.className("demo-frame"));
 		driver.switchTo().frame(iframe);
