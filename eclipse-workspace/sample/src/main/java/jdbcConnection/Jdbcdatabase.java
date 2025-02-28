@@ -16,6 +16,7 @@ public class Jdbcdatabase {
 		String username="root";
 		String pass="root";
 		//establish the connection
+		//coonection
 		try {
 			Connection connection=DriverManager.getConnection(db_url, username, pass);
 			//perform the operation
@@ -44,6 +45,7 @@ public class Jdbcdatabase {
 				System.out.println(result.getInt("empcode")+ result.getString("empname")+result.getInt("empage")+result.getInt("easlary"));
 				
 			}
+			// connection close
 			connection.close();
 			
 		} catch (SQLException e) {
